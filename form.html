@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <form>
+    <label for="fname">이름:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+
+    <label>성별:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">남성</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">여성</label><br>
+
+    <label for="student">학생인가요?:</label>
+    <input type="checkbox" id="student" name="student"><br>
+
+    <label for="country">지역:</label>
+    <select id="country" name="country">
+      <option value="seoul">서울</option>
+      <option value="Gyeongi">경기도</option>
+      <option value="Kyeonsangbukdo">경상북도</option>
+      <option value="others">그 외</option>
+    </select><br>
+
+    <label for="dob">생년월일:</label><br>
+    <input type="date" id="dob" name="dob"><br>
+
+    <label for="message">메시지:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+    <fieldset>
+      <legend>주소</legend>
+      <label for="pobox">우편번호:</label><br>
+      <input type="text" id="pobox" name="pobox"><br>
+      <label for="detail">상세주소:</label><br>
+      <input type="text" id="detail" name="detail"><br>
+    </fieldset>
+
+    <label for="car">차량 선택:</label><br>
+    <select id="car" name="car">
+      <optgroup label="한국 차량">
+        <option value="hyundai">현대</option>
+        <option value="kia">기아</option>
+      </optgroup>
+      <optgroup label="일본 차량">
+        <option value="toyota">토요타</option>
+        <option value="honda">혼다</option>
+      </optgroup>
+      <optgroup label="미국 차량">
+        <option value="ford">포드</option>
+        <option value="chevrolet">쉐보레</option>
+      </optgroup>
+    </select><br>
+
+    <label for="favcolor">좋아하는 색상:</label><br>
+    <input type="color" id="favcolor" name="favcolor"><br>
+
+    <label for="browser">브라우저 선택:</label><br>
+    <input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Edge">
+      <option value="Safari">
+      <option value="Opera">
+    </datalist><br>
+
+    <input type="submit" value="제출">
+  </form>
+</body>
+</html>
